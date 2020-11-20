@@ -34,9 +34,8 @@ body {
 .choiceSelection{
     grid-column: 4/10;
     grid-row: 2/3;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     background: url(../images/bg-triangle.svg) center no-repeat content-box;
     min-height: 400px;
 }

@@ -6,14 +6,17 @@ let optionsURL = ["./images/icon.rock.svg", "./images/icon.paper.svg", "./images
 let computerChoice = ""
 let userChoice = "";
 let score = 0;
-
 $(".button").click(function() {
     userChoice = options.indexOf($(this).attr("id"));
     console.log(userChoice);
     computerChoice = computersPick();
     console.log(computerChoice);
     console.log(compare(userChoice, computerChoice));
+
+//TODO: Show Side By Side. Edit middle text and create a play again button.
+
 });
+
 
 function computersPick(){
     return Math.floor(Math.random() * 3);
@@ -39,3 +42,5 @@ function compare(choice1, choice2){
     }
 
 }
+//TODO: Rules Modal Popup.
+
