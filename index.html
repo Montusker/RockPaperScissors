@@ -3,35 +3,86 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="css/Styles.css">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
+
   <title>Frontend Mentor | Rock, Paper, Scissors</title>
-
-  Score
-  Rules
-
-  You Picked
-  The House Picked
-
-  You Win
-  You Lose
-
-  Play Again
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+ 
 </head>
+
+
 <body>
+  <div class="mainContent">
+
+    <!--Scoreboard-->
+    <div class="scoreboard">
+      <div class="scoreTitle"><h1>Rock<br>Paper<br>Scisssors</h1></div>
+      <div class="scoreTracker">
+        <div class="scoreLabel">Score</div>
+        <div class="score-value">
+          <h1 class="value">0</h1>
+        </div>
+      </div>
+    </div>
 
 
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    <!--Player choices for the game.-->
+    <div class="choiceSelection">
+      <div id="Paper" class="button"><span><img src="images/icon-paper.svg" alt="paper"></span></div>
+      <div id="Scissors" class="button"><span><img src="images/icon-scissors.svg" alt="scissors"></span></div>
+      <div id="Rock" class="button"><span><img src="images/icon-rock.svg" alt="rock"></span></div>
+    </div>
+
+
+    <!--Displays Who Won-->
+    <div class="resultContainer">
+      <div class="player">
+          <div class="playerStatus ">
+              <h1>You Picked</h1>
+          </div>
+          <div id="player"><span id="game-1"><img src="images/icon-paper.svg" alt="paper" id="user"></span></div>
+      </div>
+      <div class="computer ">
+          <div class="computerStatus ">
+              <h1>The House Picked</h1>
+          </div>
+          <div class="invisible">
+              <div id="computer"><span id="game-2"><img src="images/icon-rock.svg" alt="rock" id="machine"></span></div>
+          </div>
+      </div>
+      <div class="resultTitle">
+          <div>
+              <h1 id="status">You win</h1>
+          </div>
+          <div class="play-again">Play Again</div>
+      </div>
+
   </div>
+
+    <!--Rules Button-->
+    <div class="rulesbutton">Rules</div>
+
+
+    <!--Rules Modal-->
+    <div class="rulesOverlay">
+      <div class="rulesContainer">
+        <div class="rulesLabel">Rules</div>
+        <div class="closeButton">
+            <img src="images/icon-close.svg" alt="close">
+        </div>
+        <div class="rulesImage"><img src="images/image-rules.svg" alt="rules"></div>
+    </div>
+    </div>
+    <!--Attribution-->
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Joseph Adamo</a>.
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="game.js" charset="utf-8"></script>
 </body>
 </html>

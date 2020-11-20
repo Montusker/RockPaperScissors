@@ -1,0 +1,80 @@
+body {
+    background-image: radial-gradient(hsl(214, 47%, 23%),hsl(237, 49%, 15%));
+    font-family: 'Barlow Semi Condensed', sans-serif;
+
+}
+
+.mainContent{
+    height: 100%;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto
+}
+
+.scoreboard{
+    grid-column: 4/10;
+    grid-row: 1/2;
+
+    margin-top: 5%;
+    border: 3px solid #d3d3d3;
+    border-radius: 10px;
+    background: inherit;
+    padding: 1%;
+    display: flex;
+
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+
+    color: white;
+}
+
+
+.choiceSelection{
+    grid-column: 4/10;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    background: url(../images/bg-triangle.svg) center no-repeat content-box;
+    min-height: 400px;
+}
+.rulesbutton{
+    grid-column: 11/12;
+    grid-row: 3/4;
+    border: 3px solid #d3d3d3;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+}
+
+.attribution {
+    grid-column: 6/8;
+    grid-row: 4/5;
+    font-size: 11px; text-align: center;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+#paper {
+    grid-column: 2;
+}
+#scissors {
+    grid-column: 4;
+}
+#rock {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+
+
+
+
+.rulesOverlay {
+    display: none;
+}
+.resultContainer {
+    display: none;
+}
+
