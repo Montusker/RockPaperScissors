@@ -22,7 +22,7 @@
       <div class="scoreTitle"><h1>Rock<br>Paper<br>Scisssors</h1></div>
       <div class="scoreTracker">
         <div class="scoreLabel">Score</div>
-        <div class="score-value">
+        <div class="scoreValue">
           <h1 class="value">0</h1>
         </div>
       </div>
@@ -31,50 +31,56 @@
 
     <!--Player choices for the game.-->
     <div class="choiceSelection">
-      <div id="Paper" class="button"><span><img src="images/icon-paper.svg" alt="paper"></span></div>
-      <div id="Scissors" class="button"><span><img src="images/icon-scissors.svg" alt="scissors"></span></div>
-      <div id="Rock" class="button"><span><img src="images/icon-rock.svg" alt="rock"></span></div>
+      <div id="paper" class="paper button"><span><img src="images/icon-paper.svg" alt="paper"></span></div>
+      <div id="scissors" class="scissors button"><span><img src="images/icon-scissors.svg" alt="scissors"></span></div>
+      <div id="rock" class="rock button"><span><img src="images/icon-rock.svg" alt="rock"></span></div>
     </div>
 
 
     <!--Displays Who Won-->
-    <div class="resultContainer">
+    <div class="resultsContainer invisible">
       <div class="player">
           <div class="playerStatus ">
               <h1>You Picked</h1>
           </div>
-          <div id="player"><span id="game-1"><img src="images/icon-paper.svg" alt="paper" id="user"></span></div>
+          <div id="player"><span><img src="images/icon-paper.svg" alt="paper" id="user"></span></div>
       </div>
+      <div class="resultTitle">
+        <div>
+            <h1 id="status">You win</h1>
+        </div>
+        <div class="playAgain">Play Again</div>
+    </div>
       <div class="computer ">
           <div class="computerStatus ">
               <h1>The House Picked</h1>
           </div>
-          <div class="invisible">
-              <div id="computer"><span id="game-2"><img src="images/icon-rock.svg" alt="rock" id="machine"></span></div>
-          </div>
-      </div>
-      <div class="resultTitle">
           <div>
-              <h1 id="status">You win</h1>
+              <div id="computer"><span><img src="images/icon-rock.svg" alt="rock" id="machine"></span></div>
           </div>
-          <div class="play-again">Play Again</div>
       </div>
+      
 
   </div>
 
     <!--Rules Button-->
-    <div class="rulesbutton">Rules</div>
+    <div class="rulesButton">Rules</div>
 
 
     <!--Rules Modal-->
     <div class="rulesOverlay">
+
       <div class="rulesContainer">
+
         <div class="rulesLabel">Rules</div>
-        <div class="closeButton">
+
+          <div class="closeButton">
             <img src="images/icon-close.svg" alt="close">
-        </div>
+          </div>
+
         <div class="rulesImage"><img src="images/image-rules.svg" alt="rules"></div>
-    </div>
+      </div>
+
     </div>
     <!--Attribution-->
     <div class="attribution">
