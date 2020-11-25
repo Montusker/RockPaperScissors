@@ -2,105 +2,106 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-  <link rel="stylesheet" href="css/Styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple Rock Paper Scissors Game. Built with HTML, CSS, JavaScript, and JQuery.">
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="css/Styles.css">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap"
-    rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
 
-  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
 
 </head>
 
 
 <body>
-  <div class="mainContent">
+    <div class="mainContent">
 
-    <!--Scoreboard-->
-    <div class="scoreboard">
-      <div class="scoreTitle">
-        <h1>Rock<br>Paper<br>Scisssors</h1>
-      </div>
-      <div class="scoreTracker">
-        <div class="scoreLabel">Score</div>
-        <div class="scoreValue">
-          <h1 class="value">0</h1>
+        <!--Scoreboard-->
+        <div class="scoreboard">
+            <div class="scoreTitle">
+                <h1>Rock<br>Paper<br>Scisssors</h1>
+            </div>
+            <div class="scoreTracker">
+                <div class="scoreLabel">Score</div>
+                <div class="scoreValue">
+                    <h1 class="value">0</h1>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
 
 
-    <!--Player choices for the game.-->
-    <div class="choiceSelection">
-      <div id="rock" class="option1 rock button"><span><img src="images/icon-rock.svg" alt="rock"></span></div>
+        <!--Player choices for the game.-->
+        <div class="choiceSelection">
+            <div id="rock" class="option1 rock button"><span><img src="images/icon-rock.svg" alt="rock"></span></div>
 
-      <div id="paper" class="option2 paper button"><span><img src="images/icon-paper.svg" alt="paper"></span></div>
-      <div id="scissors" class="option3 scissors button"><span><img src="images/icon-scissors.svg" alt="scissors"></span></div>
+            <div id="paper" class="option2 paper button"><span><img src="images/icon-paper.svg" alt="paper"></span></div>
+            <div id="scissors" class="option3 scissors button"><span><img src="images/icon-scissors.svg"
+            alt="scissors"></span></div>
 
-    </div>
-
-
-    <!--Displays Who Won-->
-    <div class="resultsContainer invisible">
-
-      <div class="playerStatusplayer">
-        <h1>You Picked</h1>
-      </div>
-
-      <div class="whoWon">
-        <h1 id="status">You win</h1>
-      </div>
-
-      <div class="computerStatus ">
-        <h1>The House Picked</h1>
-      </div>
-
-
-
-      <div id="player" class="playerChoice"><span><img src="images/icon-paper.svg" alt="paper" id="user"></span></div>
-
-      <div class="playAgain">Play Again</div>
-
-      <div id="computer" class="computerChoice"><span><img src="images/icon-rock.svg" alt="rock" id="machine"></span></div>
-
-
-     
-
-
-    </div>
-
-    <!--Rules Button-->
-    <div class="rulesButton">Rules</div>
-
-
-    <!--Rules Modal-->
-    <div class="rulesOverlay">
-
-      <div class="rulesContainer">
-
-        <div class="rulesLabel">Rules</div>
-
-        
-        <div class="break"></div>
-        <div class="rulesImage"><img src="images/image-rules.svg" alt="rules"></div>
-        <div class="closeButton">
-          <img src="images/icon-close.svg" alt="close">
         </div>
-      </div>
 
+
+        <!--Displays Who Won-->
+        <div class="resultsContainer invisible">
+
+            <div class="playerStatusplayer">
+                <h1>You Picked</h1>
+            </div>
+
+            <div class="whoWon">
+                <h1 id="status">You win</h1>
+            </div>
+
+            <div class="computerStatus ">
+                <h1>The House Picked</h1>
+            </div>
+
+
+
+            <div id="player" class="playerChoice"><span><img src="images/icon-paper.svg" alt="paper" id="user"></span></div>
+
+            <div class="playAgain">Play Again</div>
+
+            <div id="computer" class="computerChoice"><span><img src="images/icon-rock.svg" alt="rock" id="machine"></span>
+            </div>
+
+
+
+
+
+        </div>
+
+        <!--Rules Button-->
+        <div class="rulesButton">Rules</div>
+
+
+        <!--Rules Modal-->
+        <div class="rulesOverlay">
+
+            <div class="rulesContainer">
+
+                <div class="rulesLabel">Rules</div>
+
+
+                <div class="break"></div>
+                <div class="rulesImage"><img src="images/image-rules.svg" alt="rules"></div>
+                <div class="closeButton">
+                    <img src="images/icon-close.svg" alt="close">
+                </div>
+            </div>
+
+        </div>
+        <!--Attribution-->
+        <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener">Frontend Mentor</a>. Coded by <a href="#">Joseph Adamo</a>.
+        </div>
     </div>
-    <!--Attribution-->
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Joseph Adamo</a>.
-    </div>
-  </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="game.js" charset="utf-8"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="game.js" charset="utf-8"></script>
 </body>
 
 </html>
