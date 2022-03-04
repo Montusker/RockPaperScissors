@@ -63,5 +63,29 @@ function playRound(){
 
 
 }
-console.log(playRound());
+
+function game(){
+    let playerScore = 0;
+    let computerScore = 0;
+    let numberOfTies = 0;
+
+    for (let i = 0; i < 5; i++) {
+        let temp = playRound();
+        console.log(temp);
+        if (temp.includes("Win")){
+            playerScore++;
+        }
+        else if (temp.includes("Lose")){
+            computerScore++;
+        }
+        else
+            numberOfTies++;
+     }
+
+     console.log("player" + playerScore);
+     console.log("computer" + computerScore);
+     console.log("ties"+ numberOfTies);
+}
+
+game();
 
