@@ -40,7 +40,7 @@ function playRound(){
             if (computerChoice === "Rock")
                 return "You tie! Rock ties with Rock!";
             else if (computerChoice === "Paper")
-                return "You lose! Paper beats Rock";
+                return "You Lose! Paper beats Rock";
             else 
                 return "You Win! Rock beats Scissors";
         case "Paper":
