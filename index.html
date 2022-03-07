@@ -1,13 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, i`nitial-scale=1.0">
     <title>Rock Paper Scissors!</title>
 </head>
+
 <body>
-    <h1>Open the browser Console to play!</h1>
+
+    <h1>Rock, Paper, Scissors!</h1>
+
+    <button class="btn" value="rock">Rock!</button>
+    <button class="btn" value="paper">Paper</button>
+    <button class="btn" value="scissors">Scissors</button>
+
+    <h2 id="winner"></h2>
+
+
+
+    <div class="score" style="display: flex; justify-content: space-evenly">
+        <div>
+            <h3>Player</h3>
+            <p id="playerScore">0</p>
+        </div>
+        <div>
+            <h3>Computer</h3>
+            <p id="computerScore">0</p>
+        </div>
+        <div>
+            <h3>Ties</h3>
+            <p id="ties">0</p>
+        </div>
+
+    </div>
+
+    <h1 id="gameOver"></h1>
     <script src="index.js"></script>
 </body>
+
 </html>
